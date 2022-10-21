@@ -11,7 +11,7 @@ resources:
       name: microsoft/PowerAppsTestAutomation
       ref: master
       # Name of the GitHub OAuth ADO Service Connection
-      endpoint: <ADO GitHub OAuth Service Connection Name>
+      endpoint: test-studio-yaml-pipeline
 
 parameters:
  - name: image
@@ -59,7 +59,7 @@ jobs:
     value: TestAutomationURLs.json
     # Project name of repo containing TestAutomationURLs (spaces should be encoded as %20)
     # Example: Contoso Test Framework --> Contoso%20Test%20Framework
-  - name: LocalProjectName
+  - name: test-studio-yaml-pipeline
     value: PowerAppsTestAutomation
 
   steps:
